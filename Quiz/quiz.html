@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game" class="justify-center flex-column">
+            <div id="counter">
+                <div class="counter-item">
+                    <p id="questionCounter" class="counter-prefix">Question:</p>
+                    <h1 id="questionNumber" class="counter-main-text" >1/10</h1>
+                </div>
+                <div class="counter-item">
+                    <p class="counter-prefix">Score:</p>
+                    <h1 id="score" class="counter-main-text" >0</h1>
+                </div>
+            </div>
+            <h1 id="question">What is the answer to this question?</h1>
+            <div class="answer-container">
+                <p class="answer-prefix">A</p>
+                <p class="answer-text" data-answer="a">Answer a</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">B</p>
+                <p class="answer-text" data-answer="b">Answer b</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">C</p>
+                <p class="answer-text" data-answer="c">Answer c</p>
+            </div>
+            <div class="answer-container">
+                <p class="answer-prefix">D</p>
+                <p class="answer-text" data-answer="d">Answer d</p>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

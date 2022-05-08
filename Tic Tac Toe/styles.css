@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Poppins:ital@1&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  color: green;
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: center;
+  background-color: darkkhaki;
+}
+
+.container {
+  background:lightgoldenrodyellow;
+  margin: 10px;
+  padding: 50px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  color: orangered;
+}
+
+.status-action {
+  display: flex;
+  margin-top: 25px;
+  font-size: 25px;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.status span {
+  color: #f2ebd3;
+}
+[data-winning-message-text] {
+  font-size: 2rem;
+  text-align: center;
+  color: orangered;
+}
+.reset {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.reset:hover {
+  color: red;
+}
+
+.game-grid {
+  background: lightgoldenrodyellow;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.cell {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 8rem;
+  width: 8rem;
+}
+
+.x,
+.o {
+  cursor: default;
+}
+
+.cell.x::after {
+  content: "X";
+  font-size: 6rem;
+}
+
+.cell.o::after {
+  content: "O";
+  color: orangered;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.won::after {
+  color: orangered;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 1439px) {
+  html {
+    font-size: 16px;
+  }
+}

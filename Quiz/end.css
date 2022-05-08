@@ -1,0 +1,21 @@
+.btn {
+    font-size: 3.4rem;
+    padding: 2rem 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#finalScore {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 8rem;
+    color: yellow;
+}
+
+#end{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
