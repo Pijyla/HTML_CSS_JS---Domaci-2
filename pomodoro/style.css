@@ -1,0 +1,63 @@
+body {
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+  }
+
+
+header{
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header>button {
+    padding: 1% 70px;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgb(50, 140, 190);
+    color: white;
+  }
+button{
+    padding: 3% 6%;
+}
+
+#start {
+background-color: green;
+color: white;
+}
+
+#stop {
+background-color: red;
+color: white;
+}
+
+#reset {
+background-color: beige;
+}
+
+.control {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: auto;
+  }
+
+.control>button:hover{
+    transform: scale(1.2);
+}
+
+.timer p{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.active{
+    background-color: rgb(53, 50, 247);
+}
